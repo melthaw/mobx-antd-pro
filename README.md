@@ -111,6 +111,12 @@ export class UserModel {
 
 ```
 
+The model should be a standard mobx class and exported the class not the instance as default. 
+
+Remember to inject the root store by constructor which is from the following article
+
+* [Best Practices for building large scale maintainable projects](https://mobx.js.org/best/store.html)
+
 
 -----
 
@@ -167,8 +173,3 @@ npm run lint:fix
 npm test
 ```
 
-# Appendix 
-
-## Refz
-
-* [Best Practices for building large scale maintainable projects](https://mobx.js.org/best/store.html)
